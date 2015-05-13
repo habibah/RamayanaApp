@@ -25,8 +25,6 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         editTextDiskon = (EditText) findViewById(R.id.besarDiskon);
 
         textViewHasil = (TextView) findViewById(R.id.harga);
-        //editTextDiskon.setFilters(new InputFilter[]{ new InputFilterDiskon("45", "75")});
-
         btnHasil = (Button) findViewById(R.id.buttonHarga);
         btnHasil.setOnClickListener(this);
 
@@ -75,17 +73,6 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         else {
             textViewHasil.setText("diskon harus di antara  45% - 75%");
         }
-
-
-
-        //inputDiskon = editTextDiskon.setFilters(new InputFilter[]{new InputFilterDiskon("45", "75")});
-
-           // double diskonBaru = Double.parseDouble(inputHarga) * (Double.parseDouble(inputDiskon) / 100);
-
-          //  double hargaBaru = Double.parseDouble(inputHarga) - diskonBaru;
-
-           // textViewHasil.setText(String.valueOf(hargaBaru));
-
 
     }
 }
